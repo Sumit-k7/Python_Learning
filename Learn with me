@@ -1,0 +1,152 @@
+#Thi is your first code in python 
+print('Hello world')
+
+#calculating the simple interest 
+
+p=input('enter the value of p')
+n=input('enter the value of n')
+r=input('enter the value of r')
+
+#converting string into integers
+
+p = int(p)
+n= int(n)
+r= int(r)
+
+Simple_interest = (p*n*r)/100
+print(Simple_interest)
+
+#if statement in python 
+
+#converting age into integer value  in the same line
+
+age= int(input('enter your age'))
+
+if age >= 18:
+    print('you are an adult')
+else:
+    print('you are not an adult')
+
+#elif statement in python with grading system with multiple elif statement 
+
+marks = int(input('enter your marks'))
+
+if marks >= 90:
+  print('Grade A')
+elif marks >=70:
+  print('Grade B')
+elif marks >= 60:
+  print('Grade C')
+elif marks< 60:
+  print('Grade D')
+
+#Introduction to lists in python something like reviewing a website 
+
+Names = ["Neymar","Ronaldo","Messi"]
+print(Names)
+
+# 0 belongs to Neymar . 1 belongs to ronaldo , 2 belongs to messi 
+
+print(Names[0]) you will get Neymar as the result
+print(Names[1])  you will get Ronaldo as the result
+
+#List operations in python 
+
+numbers =[1,1,1,1,1]
+#inserting a value in the list 
+numbers[2]=5
+print(numbers)
+
+#creating a new list 
+
+new_numbers =[2,3,4,5,6,6,7,8]
+
+#combining two lists 
+
+print(numbers+new_numbers)
+#multiplying the list
+print(numbers*3)
+
+checking if something particular is present in the list
+
+print("Apple" in Fruits)
+
+#List functions in python 
+# 1st function is Append- used to add something in the list  
+Fruits.append("Oranges")
+
+# 2nd function is to track the length of the list - l
+print(len(Fruits))
+
+# 3rd Insert function 
+Fruits.insert(1,"Kiwi")
+
+#4th INDEX function - it is used to know which place is for a particular position
+print(Fruits.index("Peaches"))
+
+#Range function in Python - #Important 
+
+numbers = list(range(10))
+print(numbers)
+
+#starting and ending point of the range
+numbers = list(range(10,1000))
+print(numbers)
+
+
+#having an interval in the list
+numbers= list(range(10,1000,100))
+print(numbers)
+
+#Code reuse - what if we want to reuse the code again in the later part of the code 
+#print('My name is Sumit Khurana')
+#print(" Fruit is bananna")
+#print("I live in delhi")
+
+# so we define  a function add the context and you can call that function anytime you want  
+
+def function1():
+  print('My name is Sumit Khurana')
+  print(" Fruit is bananna")
+  print("I live in delhi")
+
+
+#when you call the function the data inside that function will be executed
+function1()
+
+#For Loop in python - How it can be used to print out the element inside the list 
+for x in range(1,11):
+  print(x)
+
+# if you want to repeat your name 5 times 
+for x in range(1,6):
+  print("Sumit")
+
+#to execute each and every item in the list for loop can be used, X will print till the range or the number of items in the list
+for x in Fruits:
+  print(x)
+
+#executing even numbers from a list with the help of range
+for x in range(0,21,2):
+  print(x)
+
+#Boolean logic - And operator - with this operator both the conditions has to be true  
+
+username ="admin"
+password ="admin123"
+
+if username == "admin" and password == "admin123":
+  print("valid user")
+else:
+  print("invalid user")
+
+#Boolean logic - OR operator - only one condition has to be true , for a false statement both the conditions has to be false 
+
+username ="user"
+password ="admin123"
+
+if username == "admin" or password == "admin123":
+  print("valid user")
+else:
+  print("invalid user")
+
